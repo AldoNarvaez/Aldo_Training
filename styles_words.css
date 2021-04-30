@@ -1,0 +1,31 @@
+
+.words {
+
+list-style: none;
+display: flex;
+flex-direction: row;
+position: absolute;
+margin: 150px;
+left: 25%;
+direction: rtl;
+
+}
+
+
+
+a {
+text-decoration: none;
+display: inline-block;
+padding: 0.75em;
+color: inherit;
+text-align: center;
+font-size: 50px;
+
+
+}
+
+a:hover {
+  color: gold;
+  transform: scale(10.3);
+  transition: all 1.0s;
+}

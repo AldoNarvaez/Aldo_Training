@@ -1,0 +1,58 @@
+h1 {
+
+	font-size: 30px;
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: 25px;
+
+}
+header {
+border: 1px solid black;
+
+}
+
+a {
+	text-decoration: none;
+}
+
+nav ul {      
+      text-align: center;
+      text-decoration: none;
+
+    }
+nav li {
+        display: inline-block;
+    }
+
+nav li:not(:last-child)::after {
+        content: " | ";
+    }
+
+.row{
+	overflow: hidden;
+	display: flex;
+	align-items: stretch;
+	height: 200px;
+
+}
+
+.content {
+
+	border: 1px solid black;
+	padding: 5px;
+
+}
+
+h2 {
+
+		margin: 15px 0;
+	text-align: center;
+}
+
+.footer {
+	text-align: center;
+	border: 1px solid black;
+	border-bottom: 1px solid black;
+	width: 100%;
+	height: 100px;
+}

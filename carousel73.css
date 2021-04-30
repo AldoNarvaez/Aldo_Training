@@ -1,0 +1,75 @@
+
+
+
+/*#carousel {
+	overflow: hidden;
+	width: 500px;
+	height: 300px;
+
+}
+
+#carousel ul {
+	list-style: none;
+	width: 300%
+	display:00;
+	display: inline-flex;
+	align-items: center;
+	animation: 6s slides infinite;
+
+
+}
+
+#carousel figure{
+	width:33%;
+	float: left;
+
+}*/
+
+
+/*@keyframes slides {
+
+0% {left:0;}
+33% {left:0;}
+66% {left: 0;}
+
+}*/
+
+#carousel {
+	overflow: hidden;
+	width: 500px;
+	height: 300px;
+
+
+}
+#carousel ul {
+	list-style: none;
+	position: relative;
+	width: 300%;
+	margin: 0;
+	padding: 0;
+	/*left: 0*/
+	animation: 12s slider;
+	animation: 12s slider infinite;
+
+}
+
+#carousel figure img{
+	width:33%;
+	float: left;
+
+}
+
+@keyframes slider {
+	0%{
+		left: 0;
+	}
+	33%{
+		left: 0;}
+	66%{left:-100%;
+
+	}
+
+	100%{left: -200%}
+
+}
+

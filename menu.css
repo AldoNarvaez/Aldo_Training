@@ -1,0 +1,83 @@
+
+h1 {
+
+	font-size: 30px;
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: 25px;
+
+}
+
+
+.main-menu {      
+      text-align: center;
+      text-decoration: none;
+      justify-content: center;
+      width: 100%;
+      position: absolute;
+    }
+.option {
+        display: inline-block;
+        border: 2px solid black;
+        padding: 4px;
+
+    }
+
+input .marker{
+	position: relative;
+	left:50%;
+
+}
+
+button {
+font-size: 15px;
+font-style: bold;
+
+}
+
+.submenu {
+    display: none;
+    list-style: none;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+
+}
+
+.option:hover .submenu{
+    display: initial;
+}
+
+
+
+div input:checked + label + .main-menu{
+    left:0;
+    padding: 0;
+    width: 15vw;  
+
+}
+
+
+div input:checked + label + input + label + .main-menu{
+	right: 0;
+    padding-left: 0vw;
+    width: 15vw;
+	  
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+/*@media screen and (max-width: 800px) {
+  .main-menu {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/*@media screen and (max-width: 600px) {
+  .main-menu {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}*/
