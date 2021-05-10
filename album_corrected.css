@@ -1,0 +1,47 @@
+body{
+	border: 1px solid black;
+
+}
+
+*{
+	background-color: grey;
+	
+}
+
+h1{
+	font-size: 30px;
+	text-align: center
+
+}
+
+
+.Photos {
+	width: 100%;
+  	display: grid;
+  	grid-template-columns: auto auto auto auto;
+}
+
+.photo {
+	width: 100%;
+	height: 130px;
+	text-align: center;
+	border: 1px solid black;
+	background-color: blue;
+	
+
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  
+  .Photos { grid-template-columns: auto auto;
+
+    
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.Photos {
+     	grid-template-columns: auto ;
+  }
