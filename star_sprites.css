@@ -1,0 +1,45 @@
+
+h1 {
+    margin: 0;
+    font-weight: 400;
+    color: orange;
+    text-align: center;
+}
+
+body{
+  background: blue;
+}
+.stars {
+
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 75px;
+}
+
+.stars input{
+  display: none;
+}
+
+.stars label{
+  display: block;
+  cursor: pointer;
+  width: 120px;
+  height: 100px;
+ background-image: url(stars_faces.png); 
+ background-position: 0 300px; 
+ background-size: 600px 200px;
+}
+
+.stars label:hover, 
+.stars label:hover ~ label, 
+.stars input:checked ~ label {
+
+  background: url(stars_faces.png);
+  background-position: 0px 200px;
+  background-size: 600px 200px;
+}
+
+

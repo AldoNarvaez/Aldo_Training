@@ -1,0 +1,58 @@
+
+
+h1 {
+    margin: 0;
+    font-weight: 400;
+    color: orange;
+    text-align: center;
+}
+
+body{
+  background: blue;
+}
+.stars {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) rotateY(180deg);
+  display: flex;
+}
+
+.stars input{
+  display: none;
+}
+
+.stars label{
+  display: block;
+  cursor: pointer;
+  width: 50px;
+  
+}
+
+.stars label:before{
+  content: '\f005';
+  font-family: fontAwesome;
+  display: block;
+  font-size: 50px;
+  color: black;
+}
+
+.stars label:after{
+  content: '\f005';
+  font-family: fontAwesome;
+  position: absolute;
+  display: block;
+  font-size: 50px;
+  color: gold;
+  top: 0;
+  opacity: 0;
+  transition: .5s;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+
+}
+
+.stars label:hover:after, .stars label:hover ~ label:after, .stars input:checked ~ label:after{
+  
+opacity: 1;
+}
